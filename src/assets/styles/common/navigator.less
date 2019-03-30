@@ -1,0 +1,37 @@
+@import '../common.less';
+@import '../iconfont.css';
+@import '../border.css';
+#footer {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+#footer .active {
+  color: #ff6700;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.04rem;
+  background: #fff;
+  .footer-item {
+    float: left;
+    width: 25%;
+    height: .78rem;
+    text-align: center;
+    color: @color;
+    .item-icon {
+      // align-self: center;
+      display: inline-block;
+      margin: 0 auto .1rem;
+      font-size: .41rem;
+    }
+    p {
+      font-size: .24rem;
+    }
+  }
+}

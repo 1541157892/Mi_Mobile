@@ -1,0 +1,41 @@
+@import '../iconfont.css';
+@import '../transition.less';
+// @import './common.less';
+#hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 1rem;
+  height: 0;
+}
+.cg-header {
+  z-index: 10;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  background: #f2f2f2;
+  .cg-header-back {
+    width: 1rem;
+    height: 1rem;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABfUlEQVR4AWL4//8/oH1zzA4gCMJgbNv239i2beP+R8gXczpmV79XB9ja3UEDDJCAIAQhCEF/TBAgCEEIUkSKFrEoahD0VFCdOLtmWxQh6E5Okzh7xCyC7n85T+lyL0jREJDT434NMr6cAde7mLHmXDDkfptX1AfkjPk+B9lyRn0fFO01Z8r9SVrRGJAzLaL9CrJ/q4XvlnPBX5IT4/qyqqgJyFkWcX5v8/aXsyKSXKc7FLUBORuGHAeC7K18y5DjQ5CiOiBnU6T6zSjav9WWSPebcrV3qz2R4Tcnba85hyLTb9Le/nL2RY7fqsbLcnJdl30MOSeiwG9dzD4hX1DitnCoSBDlhpwy15VVRY9YDvxWhd/xYAjiF2ORLnYviG3+45dTDopcNbisftvvRrrjlQmzNAeCSLmStP9OSZR9KBx+6cK95LH0TPMC7S80UNGCRxMnbcA0kg8iiFEEhlkYh2Kg7vd/STvPj2Qy1NvKUO+PgCAEIQhBCEIQghAE53kdVfEUUHFYAAAAAElFTkSuQmCC);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: .2rem center;
+  }
+  .cg-header-variety {
+    flex: 1;
+    color: #666;
+  }
+  .cg-header-search {
+    width: 1.06rem;
+    font-size: .48rem;
+    color: #a5a5a5;
+  }
+}

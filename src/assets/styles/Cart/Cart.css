@@ -1,0 +1,110 @@
+a {
+  color: #c3c3c3;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.interval {
+  box-sizing: border-box;
+  height: .16rem;
+  border-bottom: 0.16rem solid #f5f5f5;
+}
+.cart-body {
+  padding-top: 1rem;
+  padding-bottom: .9rem;
+}
+.cart-body .cart-login .login {
+  position: relative;
+  display: flex;
+  padding: 0 .56rem 0 .34rem;
+  height: 1.08rem;
+  line-height: 1.08rem;
+  justify-content: Space-between;
+}
+.cart-body .cart-login .login .desc {
+  flex: 1 1 auto;
+  font-size: .34rem;
+}
+.cart-body .cart-login .login .to-login {
+  flex: 1 1 auto;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.54);
+}
+.cart-body .cart-login .login::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: .3rem;
+  display: block;
+  transform: translate3d(0, -50%, 0) rotateZ(135deg);
+  width: .18rem;
+  height: .18rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.54);
+  border-top: 1px solid rgba(0, 0, 0, 0.54);
+}
+.cart-body .cart-car {
+  padding: .2rem;
+  font-size: 0;
+  text-align: center;
+  background: #ebebeb;
+}
+.cart-body .cart-car span {
+  display: inline-block;
+  padding: 0 .16rem 0 .96rem;
+  line-height: .8rem;
+  font-size: .24rem;
+  color: rgba(0, 0, 0, 0.27);
+  background: url(/static/img/cart/noCar.png) no-repeat 0;
+  background-size: auto 100%;
+}
+.cart-body .cart-car em {
+  display: inline-block;
+  padding: 0 .24rem;
+  line-height: .5rem;
+  font-size: .24rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.cart-body .guess-like .banner {
+  height: 1.29rem;
+}
+.cart-body .guess-like img {
+  width: 100%;
+}
+.cart-body .guess-like .like-product img {
+  width: 100%;
+}
+.cart-body .guess-like .like-product .product-left {
+  float: left;
+  width: 49.5vw;
+  margin-right: .07rem;
+}
+.cart-body .guess-like .like-product .product-right {
+  float: left;
+  width: 49.5vw;
+}
+.cart-body .guess-like .like-product .product-info {
+  padding: .18rem .26rem .22rem;
+}
+.cart-body .guess-like .like-product .product-info .product-title {
+  overflow: hidden;
+  font-size: .30rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cart-body .guess-like .like-product .product-info span {
+  position: relative;
+  display: inline-block;
+  padding-left: .2rem;
+  margin-top: .16rem;
+  font-size: .32rem;
+  color: #ff6700;
+}
+.cart-body .guess-like .like-product .product-info span::before {
+  content: '\A5';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: .24rem;
+}

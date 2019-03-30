@@ -1,0 +1,64 @@
+// bodys 页面切换
+.left-enter {
+  transform: translateX(100%);
+}
+.left-enter-to, .right-enter-to{
+  transform: translateX(0%);
+}
+.left-enter-active, .right-enter-active {
+  transition: transform .5s ease-in-out;
+}
+.left-leave, .right-leave {
+  transform: translateX(0%);
+}
+.left-leave-to {
+  transform: translateX(-100%);
+}
+.left-leave-active, .right-leave-active {
+  transition: transform .3s ease-in-out;
+}
+.right-enter {
+  transform: translateX(-100%);  
+}
+.right-leave-to {
+  transform: translateX(100%);
+}
+
+// header 的下拉
+#tf .enter-enter {
+  max-height: .6rem;
+}
+#tf .enter-enter-to {
+  max-height: 3.44rem;
+}
+#tf .enter-enter-active {
+  transition: max-height .2s ease-in-out;
+}
+
+#hidden .hidden-enter, #hidden .hidden-leave-to {
+  top: -1rem;
+}
+#hidden .hidden-enter-to{
+  top: 0;
+}
+#hidden .hidden-enter-active, #hidden .hidden-leave-active{
+  transition: top .2s linear;
+}
+
+// #tf .enter-leave {
+//   display: 
+// }
+// #tf .enter-enter-to {
+//   max-height: 3.44rem;
+// }
+// #tf .enter-enter-active {
+//   transition: max-height .2s ease-in-out;
+// }
+
+// #tf .leave-enter {
+//   display: none;
+// }
+// #tf .leave-enter-to {
+//   // display: block;
+// }
+// #tf .leave-enter-active {}

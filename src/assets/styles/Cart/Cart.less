@@ -1,0 +1,105 @@
+@import '../common.less';
+.cart-body {
+  padding-top: 1rem;
+  padding-bottom: .9rem;
+  .cart-login {
+    .login {
+      position: relative;
+      display: flex;
+      padding: 0 .56rem 0 .34rem;
+      height: 1.08rem;
+      line-height: 1.08rem;
+      justify-content: Space-between;
+      .desc {
+        flex: 1 1 auto;
+        font-size: .34rem;
+      }
+      .to-login {
+        flex: 1 1 auto;
+        text-align: right;
+        color:rgba(0, 0, 0, .54);
+      }
+    }
+    .login::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: .3rem;
+      display: block;
+      transform: translate3d(0, -50%, 0) rotateZ(135deg);
+      width: .18rem;
+      height: .18rem;
+      border-left: 1px solid rgba(0, 0, 0, .54);
+      border-top: 1px solid rgba(0, 0, 0, .54);
+    }
+  }
+  .cart-car {
+    padding: .2rem;
+    font-size: 0;
+    font-size: 0;
+    text-align: center;
+    background: #ebebeb;
+    span {
+      display: inline-block;
+      padding: 0 .16rem 0 .96rem;
+      line-height: .8rem;
+      font-size: .24rem;
+      color: rgba(0, 0, 0, .27);
+      background: url(/static/img/cart/noCar.png) no-repeat 0;
+      background-size: auto 100%;
+    }
+    em {
+      display: inline-block;
+      padding: 0 .24rem;
+      line-height: .5rem;
+      font-size: .24rem;
+      border: 1px solid rgba(0, 0, 0, .15);
+    }
+  }
+  .guess-like {
+    .banner {
+      height: 1.29rem;
+    }
+    img {
+      width: 100%;
+    }
+    .like-product {
+      img {
+        width: 100%;
+      }
+      .product-left {
+        float: left;
+        width: 49.5vw;
+        margin-right: .07rem;
+      }
+      .product-right {
+        float: left;
+        width: 49.5vw;
+      }
+      .product-info {
+        padding: .18rem .26rem .22rem;
+        .product-title {
+          overflow: hidden;
+          font-size: .30rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        span {
+          position: relative;
+          display: inline-block;
+          padding-left: .2rem;
+          margin-top: .16rem;
+          font-size: .32rem;
+          color: #ff6700;
+        }
+        span::before {
+          content: '\A5';
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: .24rem;
+        }
+      }
+    }
+  }
+}

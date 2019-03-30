@@ -1,0 +1,219 @@
+a {
+  color: #c3c3c3;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.interval {
+  box-sizing: border-box;
+  height: .16rem;
+  border-bottom: 0.16rem solid #f5f5f5;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.left-enter {
+  transform: translateX(100%);
+}
+.left-enter-to,
+.right-enter-to {
+  transform: translateX(0%);
+}
+.left-enter-active,
+.right-enter-active {
+  transition: transform 0.5s ease-in-out;
+}
+.left-leave,
+.right-leave {
+  transform: translateX(0%);
+}
+.left-leave-to {
+  transform: translateX(-100%);
+}
+.left-leave-active,
+.right-leave-active {
+  transition: transform 0.3s ease-in-out;
+}
+.right-enter {
+  transform: translateX(-100%);
+}
+.right-leave-to {
+  transform: translateX(100%);
+}
+#tf .enter-enter {
+  max-height: .6rem;
+}
+#tf .enter-enter-to {
+  max-height: 3.44rem;
+}
+#tf .enter-enter-active {
+  transition: max-height 0.2s ease-in-out;
+}
+#hidden .hidden-enter,
+#hidden .hidden-leave-to {
+  top: -1rem;
+}
+#hidden .hidden-enter-to {
+  top: 0;
+}
+#hidden .hidden-enter-active,
+#hidden .hidden-leave-active {
+  transition: top .2s linear;
+}
+#tf .header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+#tf .mask-layer {
+  z-index: 98;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+#tf .active {
+  color: #ed5b00;
+  border-bottom: 2px solid #ed5b00;
+  box-sizing: border-box;
+}
+.header {
+  background: #f2f2f2;
+}
+.header .header-top {
+  position: relative;
+  display: flex;
+  padding: .08rem 0 .09rem;
+}
+.header .header-top .header-logo {
+  float: left;
+}
+.header .header-top .header-logo .logo {
+  margin: .16rem .28rem;
+  width: .5rem;
+  height: .32rem;
+}
+.header .header-top .header-search-wrapper {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  padding-left: .64rem;
+  height: .68rem;
+  line-height: .68rem;
+  border: .02rem solid #e5e5e5;
+  border-radius: .06rem;
+  font-size: .32rem;
+  color: rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.header .header-top .header-search-wrapper .icon-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .64rem;
+  text-align: center;
+}
+.header .header-top .header-user {
+  float: left;
+}
+.header .header-top .header-user .icon-user {
+  display: block;
+  margin: 0 .22rem;
+  width: .6rem;
+  height: .68rem;
+  line-height: .68rem;
+  font-size: .44rem;
+  text-align: center;
+}
+.header .header-list {
+  position: relative;
+}
+.header .header-list ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.header .header-list .nav-display {
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .68rem;
+  height: .58rem;
+  line-height: .58rem;
+  text-align: center;
+  box-shadow: -15px 0 15px 0 #f2f2f2;
+  background: #f2f2f2;
+}
+.header .header-list .nav-display .icon-arrow {
+  display: inline-block;
+  width: .4rem;
+  height: .4rem;
+  line-height: .4rem;
+  text-align: center;
+  font-size: .24rem;
+  transition: transform .2s;
+  transform: rotateZ(0deg);
+  transform-origin: center;
+  color: #3c3c3c;
+}
+.header .header-list .nav-display .unfold {
+  transform: rotateZ(180deg);
+}
+.header .header-list .nav {
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 0;
+}
+.header .header-list .nav .nav-item {
+  display: inline-block;
+  padding: 0 .25rem;
+}
+.header .header-list .nav .nav-item span {
+  display: inline-block;
+  line-height: .56rem;
+  font-size: .28rem;
+  color: #747474;
+}
+.header .header-list .nav .nav-item-interval {
+  padding-right: .76rem;
+  display: inline-block;
+}
+.header .header-list .nav-layer {
+  padding: 0 .25rem;
+  overflow: hidden;
+}
+.header .header-list .nav-layer .title {
+  padding-top: .25rem;
+  line-height: .34rem;
+  font-size: .29rem;
+}
+.header .header-list .nav-layer .btn-wrap {
+  margin-top: .34rem;
+  font-size: 0;
+}
+.header .header-list .nav-layer .btn-wrap .btn-item {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: .14rem;
+  margin-bottom: .24rem;
+  width: 23%;
+  height: .6rem;
+  line-height: .6rem;
+  border: 1px solid #e5e5e5;
+  border-radius: .08rem;
+  font-size: .26rem;
+  text-align: center;
+  background: #fff;
+}
+.header .header-list .nav-layer .btn-wrap .btn-active {
+  background: #fde0d5;
+  border-color: #ff6700;
+  color: #ff6700;
+}
