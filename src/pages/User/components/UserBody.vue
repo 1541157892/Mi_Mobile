@@ -4,7 +4,11 @@
       <div>
         <a :href="userData.length > 1 ? 'javascript:void(0)' : '/login'" class="header-content">
           <div class="avatar-wrapper">
+<<<<<<< HEAD
             <img :src="'/static/img/public/avatar.png'">
+=======
+            <img :src="userData.avatar || '/static/img/public/avatar.png'">
+>>>>>>> '部署测试中'
           </div>
           <div class="header-login" v-if="!userData.id">登录/注册</div>
           <div class="name" v-if="userData.length > 1">
