@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile_rice-8youth">
+  <router-link :to="{path: 'Details'}" tag="div" class="mobile_rice-8youth">
     <div class="mobile-show">
       <img :src="img">
     </div>
@@ -14,7 +14,7 @@
         </span>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

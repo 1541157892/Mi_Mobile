@@ -26,11 +26,7 @@ export default {
   },
   methods: {
     getCategory () {
-<<<<<<< HEAD
-      axios.get('/api/category.json')
-=======
-      axios.get('/static/mock/category.json')
->>>>>>> '部署测试中'
+      axios.get('./static/mock/category.json')
         .then(this.handleGetCategory)
     },
     handleGetCategory (result) {

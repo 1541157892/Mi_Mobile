@@ -19,12 +19,8 @@ new Vue({
   el: '#app',
   router,
   store,
-<<<<<<< HEAD
-  components: { App },
-=======
   components: {
     App
   },
->>>>>>> '部署测试中'
   template: '<App/>'
 })
