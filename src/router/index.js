@@ -11,9 +11,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   routes: [{
-    path: '/v03033/chanke/mi/dist/index.html',
+    path: '/',
     name: 'Home',
     component: () => import('@/pages/Home/Home')
   }, {
