@@ -20,8 +20,12 @@ export default {
 </script>
 <style lang="less" scoped>
 #details {
-  // overflow: hidden;
-  position: relative;
-  width: 100%;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
 }
 </style>

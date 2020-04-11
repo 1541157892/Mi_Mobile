@@ -4,7 +4,7 @@
       <home-header :nav="item"></home-header>
     </div>
     <div id="bodys">
-      <transition-group :name="transitionName" tag="div" style="height: 83vh; overflow-y: hidden;">
+      <transition-group :name="transitionName" tag="div" :class="'bodys-content'">
         <home-body-content
           :allImgData="allImgData"
           :key="contentName + index"
@@ -63,14 +63,26 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import "~styles/common.less";
+
   #container {
-    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 27.38rem / @baseFont;
+    height: 100%;
+  }
+  #header {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 69.39rem / @baseFont;
   }
   #bodys {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
-    max-height: 200vh;
+    height: 100%;
   }
   .left-enter {
     left: 100%;

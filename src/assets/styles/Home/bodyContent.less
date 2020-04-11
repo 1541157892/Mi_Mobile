@@ -1,14 +1,17 @@
 @import '../mixins.less';
 @import '../common.less';
 
+// 默认 html 上的字体大小
+@baseFont: 37.5;
+
 .bodyWrapper {
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
-.bodyWrapper .mar-interval {
-  margin-right: 1vw;
-}
+// .bodyWrapper .mar-interval {
+//   margin-right: 1vw;
+// }
 .bodyWrapper /deep/ .swiper-pagination-bullet-active {
   background: #fff;
 }
@@ -32,18 +35,18 @@
   .product-cells {
     overflow: hidden;
     position: relative;
-    width: 100vw;
-    height: 39vh;
+    width: 10rem;
+    height: 262rem / @baseFont;
     img {
       width: 100%;
     }
     .product-cells-left {
       float: left;
-      width: 49.5vw;
+      width: 186rem / @baseFont;
     }
     .product-cells-right {
       float: right;
-      width: 49.5vw;
+      width: 186rem / @baseFont;
     }
   }
   .auto_fill {
@@ -55,10 +58,10 @@
   .mobile-product {
     .mobile_rice-8 {
       .mobile_rice-8youth:nth-child(even) {
-        margin-left: 1vw;
+        margin-left: 3rem / @baseFont;
       }
       .mobile_rice-8youth {
-        width: 49.5vw;
+        width: 186rem / @baseFont;
         .left;
         .mobile-show {
           background: #000;
@@ -67,23 +70,23 @@
           }
         }
         .info {
-          padding: .2rem .27rem;
+          padding: 10rem / @baseFont 13.5rem / @baseFont;
           .info-desc {
-            margin-top: .08rem;
-            font-size: .24rem;
+            margin-top: 4rem / @baseFont;
+            font-size: 12rem / @baseFont;
             color: rgba(0, 0, 0, .540);
           }
           .info-price {
             position: relative;
             display: inline-block;
-            padding-left: .16rem;
-            font-size: .29rem;
-            height: .5rem;
-            line-height: .5rem;
+            padding-left: 8rem / @baseFont;
+            font-size: 14.5rem / @baseFont;
+            height: 25rem / @baseFont;
+            line-height: 25rem / @baseFont;
             color: #ea625b;
             span {
-              margin-left: .04rem;
-              font-size: .24rem;
+              margin-left: 2rem / @baseFont;
+              font-size: 12rem / @baseFont;
             }
             .old {
               color: rgba(0, 0, 0, .54);
@@ -95,9 +98,9 @@
             display: inline-block;
             position: absolute;
             left: 0;
-            top: .12rem;
-            line-height: .24rem;
-            font-size: .24rem;
+            top: 6rem / @baseFont;
+            line-height: 12rem / @baseFont;
+            font-size: 12rem / @baseFont;
           }
         }
       }

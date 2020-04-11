@@ -13,24 +13,24 @@
     <div class="product">
       <div class="product-cells clear">
         <div class="product-cells-left">
-          <img src="/mi/dist/static/img/product/cells_mi8_youth.webp">
+          <img src="/static/img/product/cells_mi8_youth.webp">
         </div>
         <div class="product-cells-right">
           <div class="product-cells-right-top">
-            <img src="/mi/dist/static/img/product/cells_sale.webp">
+            <img src="/static/img/product/cells_sale.webp">
           </div>
           <div class="product-cells-right-bottom">
-            <img src="/mi/dist/static/img/product/cells_TV.webp">
+            <img src="/static/img/product/cells_TV.webp">
           </div>
         </div>
       </div>
       <div class="interval"></div>
       <div class="auto_fill">
-        <img src="/mi/dist/static/img/product/red6.webp">
+        <img src="/static/img/product/red6.webp">
       </div>
       <div class="interval"></div>
       <div class="auto_fill">
-        <img src="/mi/dist/static/img/product/recommend_mi8.webp">
+        <img src="/static/img/product/recommend_mi8.webp">
       </div>
       <div class="mobile-product">
         <div class="mobile_rice-8 clear"
@@ -50,12 +50,12 @@
       </div>
       <div class="interval"></div>
       <div class="auto_fill">
-        <img src="/mi/dist/static/img/product/notebook.webp">
+        <img src="/static/img/product/notebook.webp">
       </div>
       <div class="interval"></div>
       <div class="interval"></div>
       <div class="auto_fill">
-        <img src="/mi/dist/static/img/product/display_tv.webp">
+        <img src="/static/img/product/display_tv.webp">
       </div>
       <div class="interval" style="border-bottom: .04rem solid #fff; height: .04rem;"></div>
       <div class="mobile-product">
@@ -98,12 +98,12 @@ export default {
       },
       swiperSlide: [
         {
-          id: '/mi/dist/static/img/recommond/1.webp',
-          img: '/mi/dist/static/img/recommond/1.webp'
+          id: '/static/img/recommond/1.webp',
+          img: '/static/img/recommond/1.webp'
         },
         {
-          id: '/mi/dist/static/img/recommond/2.webp',
-          img: '/mi/dist/static/img/recommond/2.webp'
+          id: '/static/img/recommond/2.webp',
+          img: '/static/img/recommond/2.webp'
         }
       ],
       allData: {
@@ -137,9 +137,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 .bodyWrapper {
   position: absolute;
-  width: 100vw;
+  width: 10rem;
   top: 0;
 }
 </style>

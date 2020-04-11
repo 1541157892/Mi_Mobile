@@ -12,7 +12,7 @@
             @click="tabClickEvent"
           >{{ text }}</li>
           <span :style="slideOption" class="slide"></span>
-          <div style="padding-right: 10vw;min-height: 1px"></div>
+          <div style="padding-right: 1rem;min-height: 1px"></div>
         </ul>
       </div>
     </div>
@@ -44,7 +44,7 @@ export default {
     return {
       slideOption: {
         left: '0px',
-        padding: +(window.innerWidth / 100 * 3).toFixed(2),
+        padding: +(document.body.offsetWidth / 100 * 3).toFixed(2),
         width: '0px',
         toSite: 0,
         flag: true,
@@ -63,14 +63,13 @@ export default {
       this.slideOption.width = width - (this.slideOption.padding * 2) + 'px'
     },
     slideMiddle (ele) {
-      let viewWidth = window.innerWidth / 2
+      let viewWidth = document.body.offsetWidth / 2
       let eleLeft = ele.offsetLeft
       let eleLeftPadding = eleLeft + this.slideOption.padding
       let eleWidthHalf = ele.offsetWidth / 2
       let scrollToDis = eleLeftPadding + eleWidthHalf - viewWidth
       if (scrollToDis < 0 && this.slideOption.toSite < 0) {
         this.slideOption.flag = true
-        return
       }
       if (scrollToDis > this.slideOption.toSite) {
         this.leftSlide(scrollToDis, ele.parentElement)
@@ -107,6 +106,7 @@ export default {
     tabClickEvent (event) {
       let element = event.target
       let index = this.$refs.li.findIndex((ele) => ele === element)
+
       if (this.slideOption.flag) {
         document.getElementsByClassName('active')[0].classList.remove('active')
         element.classList.add('active')
@@ -139,9 +139,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@baseFont: 37.5;
 .v-enter,
 .v-leave-to {
-  height: 8.43vw;
+  height: 31.61rem / @baseFont;
 }
 .v-enter-active,
 .v-leave-active {
@@ -149,7 +150,7 @@ export default {
 }
 .v-enter-to,
 .v-leave {
-  height: 42.5vw;
+  height: 161.88rem / @baseFont;
 }
 </style>
 

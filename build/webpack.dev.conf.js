@@ -1,7 +1,7 @@
 'use strict'
 const utils = require('./utils')
 const webpack = require('webpack')
-const config = require('../config')
+const config = require('../config') // 默认读取 config 文件夹下的 index 文件
 const merge = require('webpack-merge')
 const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')
@@ -38,13 +38,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,
-    overlay: config.dev.errorOverlay ?
-      {
-        warnings: false,
-        errors: true
-      } :
-      false,
-    publicPath: config.dev.assetsPublicPath,
+    overlay: config.dev.errorOverlay ? {
+      warnings: false,
+      errors: true
+    } : false,
+    publicPath: config.dev.assetsPublicPath, // 当使用 webpack-dev-server 的 contentBase 为 false 时，存放资源的目录就是这个
     proxy: config.dev.proxyTable,
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
@@ -60,7 +58,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: 'index.html',
+      filename: './index.html',
       template: 'index.html',
       inject: true
     }),
@@ -90,8 +88,7 @@ module.exports = new Promise((resolve, reject) => {
           messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
         },
         onErrors: config.dev.notifyOnErrors ?
-          utils.createNotifierCallback() :
-          undefined
+          utils.createNotifierCallback() : undefined
       }))
 
       resolve(devWebpackConfig)

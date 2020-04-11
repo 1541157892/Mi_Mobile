@@ -1,3 +1,32 @@
+// 默认 html 上的字体大小
+@baseFont: 37.5;
+.wrapper {
+    position: relative;
+    height: 31.609rem / @baseFont;
+    .more {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        width: 30rem / @baseFont;
+        height: 30rem / @baseFont;
+        box-shadow: -13.575rem / @baseFont 0 13.575 / @baseFont 0 #f2f2f2;
+        text-align: center;
+        background-color: #f2f2f2;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: transform .4s;
+            transform-origin: center;
+            transform: translateX(-50%) translateY(-30%) rotateZ(0deg);
+            font-size: 12rem / @baseFont;
+        }
+        i.rotate {
+            transform: translateX(-50%) translateY(-30%) rotateZ(180deg);
+        }
+    }
+}
 .header__nav {
     position: absolute;
     z-index: 1;
@@ -14,10 +43,10 @@
         white-space: nowrap;
         .nav__item {
             position: relative;
-            padding: 0 3vw 0 3vw;
-            height: 4.74vh;
-            line-height: 4.74vh;
-			font-size: 3.38vw;
+            padding: 0 11.25rem / @baseFont;
+            height: 31.6094rem / @baseFont;
+            line-height: 31.6158rem / @baseFont;
+			font-size: 12.675rem / @baseFont;
             color: #747474;
             cursor: pointer;
         }
@@ -27,39 +56,12 @@
         .slide {
             position: absolute;
             bottom: 0;
-            padding-top: 2px;
+            padding-top: 2rem / @baseFont;
             transition: left .4s, width .4s;
             background-color: #ed5b00;
         }
     }
     .nav__items::-webkit-scrollbar {
         height: 0;
-    }
-}
-.wrapper {
-    position: relative;
-    height: 4.74vh;
-    .more {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        width: 8vw;
-        height: 8vw;
-        box-shadow: -3.62vw 0 3.62vw 0 #f2f2f2;
-        text-align: center;
-        background-color: #f2f2f2;
-        i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transition: transform .4s;
-            transform-origin: center;
-            transform: translateX(-50%) translateY(-30%) rotateZ(0deg);
-            font-size: 3vw;
-        }
-        i.rotate {
-            transform: translateX(-50%) translateY(-30%) rotateZ(180deg);
-        }
     }
 }

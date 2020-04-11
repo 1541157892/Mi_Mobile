@@ -20,6 +20,7 @@ export default {
 </script>
 <style lang="less" scoped>
 #Cart {
-  padding-bottom: 1.04rem;
+  overflow-y: auto;
+  height: 100%;
 }
 </style>

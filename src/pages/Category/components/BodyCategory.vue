@@ -23,11 +23,10 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@baseFont: 37.5;
 #bodyCategory {
   overflow: hidden;
   position: relative;
-  padding-top: 1rem;
-  box-sizing: border-box;
   height: 100%;
 }
 </style>

@@ -59,18 +59,19 @@ export default {
 </script>
 <style lang="less" scoped>
 @import '~styles/border.less';
+@baseFont: 37.5;
   .body-left .active {
-    font-size: .36rem;
+    font-size: 18rem / @baseFont;
     color: #fb7d34;
   }
   .body-left {
     overflow: hidden;
     z-index: 1;
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 1rem;
-    bottom: 1.04rem;
-    width: 1.58rem;
+    top: 0;
+    bottom: 0;
+    width: 79rem / @baseFont;
     .body-left-nav {
       overflow-y: auto;
       position: absolute;
@@ -78,12 +79,12 @@ export default {
       right: 0;
       top: 0;
       bottom: 0;
-      padding-top: .22rem;
-      padding-right: .3rem;
+      padding-top: 11rem / @baseFont;
+      padding-right: 15rem / @baseFont;
       width: 100%;
       li {
-        line-height: .92rem;
-        height: .92rem;
+        line-height: 46rem / @baseFont;
+        height: 46rem / @baseFont;
         text-align: center;
         span {
           transition: font-size .2s;

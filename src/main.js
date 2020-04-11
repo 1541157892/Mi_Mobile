@@ -8,6 +8,7 @@ import store from './store/index.js'
 import 'styles/iconfont.css'
 import 'styles/border.css'
 import 'styles/reset.css'
+import 'styles/mobile.less'
 import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false

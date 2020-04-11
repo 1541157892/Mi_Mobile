@@ -4,7 +4,7 @@
       <div>
         <a :href="userData.length > 1 ? 'javascript:void(0)' : '/login'" class="header-content">
           <div class="avatar-wrapper">
-            <img :src="userData.avatar || '/mi/dist/static/img/public/avatar.png'">
+            <img :src="userData.avatar || '/static/img/public/avatar.png'">
           </div>
           <div class="header-login" v-if="!userData.id">登录/注册</div>
           <div class="name" v-if="userData.length > 1">
@@ -63,6 +63,7 @@
           <div class="items_li_div">设置</div>
         </li>
       </ul>
+      <div class="container_full"></div>
     </div>
   </div>
 </template>
@@ -76,6 +77,6 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="less">
 @import '~styles/User/userBody.less';
 </style>

@@ -1,11 +1,13 @@
 @import '../common.less';
+@baseFont: 37.5;
 .search-body {
   width: 100%;
   .search-hot-title {
     box-sizing: border-box;
-    padding: 0 .3rem;
-    height: .8rem;
-    line-height: .8rem;
+    padding: 0 15rem / @baseFont;
+    height: 40rem / @baseFont;
+    line-height: 40rem / @baseFont;
+    font-size: 16rem / @baseFont;
   }
   .search-img {
     overflow: hidden;
@@ -13,19 +15,19 @@
     height: 28%;
     background: red;
     img {
-      width: 11.24rem;
+      width: 10rem;
     }
   }
   .search-option {
     .search-hot {
-      margin: .12rem .2rem;
+      margin: 6rem / @baseFont 10rem / @baseFont;
       .search-hot-item {
         float: left;
-        padding: .22rem .2rem .14rem;
-        margin: .1rem;
-        border-width: .02rem;
+        padding: 8rem / @baseFont 10rem / @baseFont;
+        margin: 5rem / @baseFont;
+        border-width: 1rem / @baseFont;
         border-style: solid;
-        font-size: .25rem;
+        font-size: 12.5rem / @baseFont;
         text-align: center;
       }
       .bg-first {
@@ -46,26 +48,26 @@
       }
     }
     .common-class {
-      font-size: .22rem;
+      font-size: 12rem / @baseFont;
       .common-class-title {
         box-sizing: border-box;
-        padding: 0 .3rem;
-        height: .8rem;
-        line-height: .8rem;
+        padding: 0 15rem / @baseFont;
+        height: 40rem / @baseFont;
+        line-height: 40rem / @baseFont;
       }
       ul {
-        padding-left: .32rem;
+        padding-left: 16rem / @baseFont;
         font-size: 0;
         li {
           display: inline-block;
-          padding: .16rem;
-          font-size: .22rem;
+          padding: 8rem / @baseFont;
+          font-size: 12rem / @baseFont;
           color: rgba(0, 0, 0, .54);
           background: #f5f5f5;
         }
         li.margin {
-          margin-right: .15rem;
-          margin-bottom: .1rem;
+          margin-right: 7.5rem / @baseFont;
+          margin-bottom: 5rem / @baseFont;
         }
       }
     }

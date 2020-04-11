@@ -103,17 +103,17 @@ export default {
 </script>
 <style lang="less" scoped>
 @import '~styles/common.less';
+@baseFont: 37.5;
 .body-alphabet {
   overflow-y: auto;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   box-sizing: border-box;
-  padding: 1rem .36rem 1.04rem 1.9rem;
+  padding: 0 18rem / @baseFont 0 95rem / @baseFont;
   width: 100%;
-  // background: red;
   img {
     width: 100%;
   }
@@ -123,33 +123,33 @@ export default {
       width: 100%;
     }
     .list-title-wrapper {
-      margin-top: .2rem;
+      margin-top: 10rem / @baseFont;
       width: 100%;
-      height: 1.33rem;
-      line-height: 1.33rem;
+      height: 66.5rem / @baseFont;
+      line-height: 66.5rem / @baseFont;
       text-align: center;
       span {
         display: inline-block;
         position: relative;
-        line-height: .3rem;
-        font-size: .3rem;
+        line-height: 15rem / @baseFont;
+        font-size: 15rem / @baseFont;
       }
       span::after {
         content: "";
         position: absolute;
         top: 50%;
-        right: -.6rem;
-        width: .4rem;
-        height: .02rem;
+        right: -26.25rem / @baseFont;
+        width: 20rem / @baseFont;
+        height: 1rem / @baseFont;
         background: #e0e0e0;
       }
       span::before {
         content: "";
         position: absolute;
         top: 50%;
-        left: -.6rem;
-        width: .4rem;
-        height: .02rem;
+        left: -26.25rem / @baseFont;
+        width: 20rem / @baseFont;
+        height: 1rem / @baseFont;
         background: #e0e0e0;
       }
     }
@@ -159,21 +159,21 @@ export default {
         width: 100%;
         li {
           float: left;
-          margin: .2rem 0 .3rem;
-          width: 33.3%;
+          margin: 10rem / @baseFont 0 15rem / @baseFont;
+          width: 87.23rem / @baseFont;
           text-align: center;
           img {
             margin: 0rem 0rem;
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 60rem / @baseFont;
+            height: 60rem / @baseFont;
           }
           .title_name {
             overflow: hidden;
             display: block;
-            margin-top: .24rem;
+            margin-top: 12rem / @baseFont;
             width: 100%;
-            line-height: .24rem;
-            font-size: .24rem;
+            line-height: 12rem / @baseFont;
+            font-size: 12rem / @baseFont;
             white-space: nowrap;
             text-overflow: ellipsis;
           }
