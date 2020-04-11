@@ -49,7 +49,7 @@ export default {
     }
   },
   mounted () {
-    this.getData('/static/mock/img.json')
+    this.getData('./static/mock/img.json')
     eventBus.$on('setShowIndex', (index) => {
       if (index > this.showIndex) {
         this.transitionName = 'left'
